@@ -59,6 +59,7 @@ def soundex(input : str) -> str :
         # store the previous character if available
         if index > 0 :
             previousChar = inputCoded[index-1]
+            
         # the first character should be skipped for processing    
         else :
             continue
@@ -77,6 +78,8 @@ def soundex(input : str) -> str :
             if previousChar == '0' :
                 finalCode.append(char)
                 continue
+
+            # characters equaling 9 are skipped if the previous and next value are the same
             elif previousChar == '9' :
                 continue
     
