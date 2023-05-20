@@ -83,8 +83,7 @@ def soundex(input : str) -> str :
 
         finalCode.append(char)
             
+    # SOUNDEX : Step 4. f there are too few letters in the word to assign three numbers, append zeros until there are 
+    # three numbers. If there are four or more numbers, retain only the first three.
     return '{:<04s}'.format(''.join(finalCode))
-
-    
-print(soundex("Sam"))
 
