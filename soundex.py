@@ -45,7 +45,7 @@ def soundex(input : str) -> str :
     # iterate over the coded input, the index is needed to compare like characters with a 0 or 9 between them
     for index, char in enumerate(inputCoded) :
 
-        # prevent further iteration once the finalCode has reached the max length according to the SOUNDEX specification
+        # prevent further iteration once the finalCode has reached the max length according to the SOUNDEX algorithm
         if len(finalCode) == 4 :
             break
 
