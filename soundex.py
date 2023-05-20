@@ -49,7 +49,7 @@ def soundex(input : str) -> str :
         if len(finalCode) == 4 :
             break
 
-        # indentify if the current character is a skippable (or to be removed) character as per the algorithm
+        # determine if the current character is a skippable (or to be removed) character as per the algorithm
         skipchar : bool = char in ['0','9']
 
         # SOUNDEX : Step 3b. Remove all the zero (0 or 9) digits (performed by skipping)
