@@ -42,7 +42,7 @@ def soundex(input : str) -> str :
     # variable that retains the last consonant coding (this will never be 0 or 9)
     previousChar : chr = None
 
-    # iterated over the coded input, the index is needed to compare like characters with a 0 or 9 between them
+    # iterate over the coded input, the index is needed to compare like characters with a 0 or 9 between them
     for index, char in enumerate(inputCoded) :
         print(char)
 
