@@ -69,7 +69,7 @@ def soundex(input : str) -> str :
 
         # SOUNDEX : Step 3.
         #
-        # If two or more letters with the same number are adjacent in the original name (before step 1), 
+        # If two or more letters with the same number are adjacent in the original word (before step 1), 
         # only retain the first letter; also two letters with the same number separated by 'h' , 'w' or 'y' 
         # are coded as a single number, whereas such letters separated by a vowel are coded twice. 
         # This rule also applies to the first letter.
